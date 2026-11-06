@@ -106,7 +106,9 @@ export class WechatOfficialMessageEncoder<C extends Context = Context> extends M
   // https://developers.weixin.qq.com/doc/offiaccount/Asset_Management/New_temporary_materials.html
   async uploadMedia(element: h) {
     const { attrs } = element
-    const uploadType = element.type === 'audio' ? 'voice' : element.type
+    let uploadType = element.type
+    if (uploadType === 'audio') uploadType = 'voice'
+    if (uploadType === 'img') uploadType = 'image'
     const form = new FormData()
 
     const { filename, data, type } = await this.bot.ctx.http.file(attrs.src || attrs.url, attrs)
@@ -125,9 +127,10 @@ export class WechatOfficialMessageEncoder<C extends Context = Context> extends M
         type: uploadType,
       },
     })
-    if (resp.media_id) {
+    if (resp?.media_id) {
       return [resp.media_id, uploadType]
     }
+    this.bot.logger.warn('failed to upload media to wechat: %s, %s', resp?.errcode, resp?.errmsg)
   }
 
   async visit(element: h) {
