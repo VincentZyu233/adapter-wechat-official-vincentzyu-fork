@@ -32,10 +32,10 @@ export class HttpServer<C extends Context = Context> extends Adapter<C, WechatOf
 
     bot.ctx.server.post('/wechat-official', async (ctx) => {
       const { timestamp, nonce, msg_signature } = ctx.request.query
-      bot.logger.debug('%c', ctx.request.body)
+      bot.logger.debug('%c', (ctx.request as any).body)
       let { xml: data }: {
         xml: Message
-      } = await xml2js.parseStringPromise(ctx.request.body, {
+      } = await xml2js.parseStringPromise((ctx.request as any).body, {
         explicitArray: false,
       })
       const botId = data.ToUserName
