@@ -1,7 +1,7 @@
 {
-  "name": "@satorijs/adapter-wechat-official",
-  "description": "Wechat Official Adapter for Satorijs",
-  "version": "2.5.0",
+  "name": "koishi-plugin-adapter-wechat-official-vincentzyu-fork",
+  "description": "Wechat Official Adapter for Koishi (VincentZyu Fork)",
+  "version": "2.5.0+20261106",
   "type": "module",
   "main": "lib/index.cjs",
   "typings": "lib/index.d.ts",
@@ -9,23 +9,25 @@
     "lib",
     "src"
   ],
-  "author": "LittleC <i@ltlec.com>",
+  "author": "VincentZyu <1830540513zyu@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/satorijs/satori.git",
-    "directory": "adapters/wechat-official"
+    "url": "git+https://github.com/VincentZyu233/adapter-wechat-official-vincentzyu-fork.git"
   },
   "bugs": {
-    "url": "https://github.com/satorijs/satori/issues"
+    "url": "https://github.com/VincentZyu233/adapter-wechat-official-vincentzyu-fork/issues"
   },
-  "homepage": "https://koishi.chat/plugins/adapter/wechat-official.html",
+  "homepage": "https://github.com/VincentZyu233/adapter-wechat-official-vincentzyu-fork",
   "keywords": [
     "bot",
     "wechat",
     "official",
     "chatbot",
     "satori",
+    "koishi",
+    "plugin",
+    "adapter",
     "im",
     "chat"
   ],
