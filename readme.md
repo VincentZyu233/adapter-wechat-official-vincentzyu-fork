@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/koishi-plugin-adapter-wechat-official-vincentzyu-fork?style=flat-square)](https://www.npmjs.com/package/koishi-plugin-adapter-wechat-official-vincentzyu-fork)
 
-适用于 Koishi 的微信公众号 (Wechat Official) 适配器 Fork 版本，基于 `@satorijs/adapter-wechat-official` 演进，修复了官方版本中媒体素材上传、富文本超链接丢失、Token 异常处理等关键缺陷，全面增强公众号消息体验。
+适用于 Koishi 的微信公众号 (Wechat Official) 适配器 Fork 版本，基于 [@satorijs/adapter-wechat-official](https://github.com/satorijs/satori/tree/main/adapters/wechat-official) 演进，修复了官方版本中媒体素材上传、富文本超链接丢失、Token 异常处理等关键缺陷，全面增强公众号消息体验。
 
 <p align="center">
   <img src="./assets/preview.png" alt="微信公众号消息与小程序直达效果预览" width="600" />
@@ -59,5 +59,5 @@ await session.send(h.audio('file:///path/to/voice.mp3'))
 
 ## 鸣谢
 
-- 原始项目：[@satorijs/adapter-wechat-official](https://github.com/satorijs/satori)
+- 原始项目：[@satorijs/adapter-wechat-official](https://github.com/satorijs/satori/tree/main/adapters/wechat-official)
 - 协议生态：[Koishi](https://koishi.chat/)
