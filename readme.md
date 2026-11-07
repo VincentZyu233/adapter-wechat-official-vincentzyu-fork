@@ -89,3 +89,16 @@ await session.send(h.audio('file:///path/to/voice.mp3'))
 - 上游代码提交：[satorijs/satori#448](https://github.com/satorijs/satori/pull/448)
 - 原始项目：[@satorijs/adapter-wechat-official](https://github.com/satorijs/satori/tree/main/adapters/wechat-official)
 - 协议生态：[Koishi](https://koishi.chat/)
+
+## 🎉 在线体验（官方示例公众号）
+
+欢迎微信扫码关注适配器实机运行的官方示例公众号：**`koishi的npm插件公众号`**
+
+<p align="center">
+  <img src="./docs/images/promote/qrcode_for_gh_adc966d1f11c_1280.jpg" alt="koishi的npm插件公众号二维码" width="240" />
+</p>
+
+- 🔍 **指令搜插件**：可在聊天框内直接发送指令搜索 Koishi 插件（例如 `market.search <关键词>`、`market.hot` 等）；
+- 🚀 **小程序卡片直达**：点击回复中的超链接可直接快速跳转到微信小程序，查看插件详情与文档；
+- 🎙️ **多媒体交互实机测试**：体验微信语音、临时图片素材等完整下发链路。
+
