@@ -13,5 +13,6 @@ export * from './utils'
 export * from './types'
 export * from './http'
 export * from './message'
+export * from './usage'
 
 export default WechatOfficialBot

@@ -1,9 +1,11 @@
 import { Bot, Context, HTTP, Schema } from '@satorijs/core'
 import { HttpServer } from './http'
 import { WechatOfficialMessageEncoder } from './message'
+import { usage } from './usage'
 // import { Internal } from './types/internal'
 
 export class WechatOfficialBot<C extends Context = Context> extends Bot<C, WechatOfficialBot.Config> {
+  static usage = usage
   static inject = ['server', 'http']
   static MessageEncoder = WechatOfficialMessageEncoder
 
