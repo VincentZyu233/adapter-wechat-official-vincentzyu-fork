@@ -5,8 +5,10 @@
 适用于 Koishi 的微信公众号 (Wechat Official) 适配器 Fork 版本，基于 [@satorijs/adapter-wechat-official](https://github.com/satorijs/satori/tree/main/adapters/wechat-official) 演进，修复了官方版本中媒体素材上传、富文本超链接丢失、Token 异常处理等关键缺陷，全面增强公众号消息体验。
 
 <p align="center">
-  <img src="./docs/images/preview/preview.text-image-voice.png" alt="微信公众号文本、图片与语音消息实测预览" width="48%" />
-  <img src="./docs/images/preview/preview.miniprogram-a-href-jump.png" alt="微信公众号消息与小程序直达效果预览" width="48%" />
+  <img src="./docs/images/preview/preview.text-image-voice.png" alt="微信公众号文本、图片与语音消息实测预览" width="600" />
+</p>
+<p align="center">
+  <img src="./docs/images/preview/preview.miniprogram-a-href-jump.png" alt="微信公众号消息与小程序直达效果预览" width="600" />
 </p>
 
 ## 主要特性与修复 (Compared to Upstream)
