@@ -24,7 +24,7 @@
 
 ---
 
-适用于 Koishi 的微信公众号 (Wechat Official) 适配器增强版，基于 [@satorijs/adapter-wechat-official](https://github.com/satorijs/satori/tree/main/adapters/wechat-official) 演进，修复了官方版本中媒体素材上传、富文本超链接丢失、Token 异常处理等关键缺陷，全面增强公众号消息体验。核心修复已同步向官方提交 [Satori PR #448](https://github.com/satorijs/satori/pull/448)。
+适用于 Koishi 的微信公众号 (Wechat Official) 适配器增强版，基于 [@satorijs/adapter-wechat-official](https://github.com/satorijs/satori/tree/main/adapters/wechat-official) 演进，修复了官方版本中媒体素材上传、富文本超链接丢失、Token 异常处理等关键缺陷，并扩展了语音双引擎自动转码与小程序卡片直达能力。核心修复与新特性已同步向官方提交 [Satori PR #448](https://github.com/satorijs/satori/pull/448) 与 [Satori PR #449](https://github.com/satorijs/satori/pull/449)。
 
 ## 📸 实机效果演示
 
@@ -32,11 +32,17 @@
   <img src="./docs/images/preview/preview.text-image-voice.png" alt="微信公众号文本、图片与语音消息实测预览" width="600" />
 </p>
 <p align="center">
+  <img src="./docs/images/preview/preview.dual-engine-voice-otto-fa.png" alt="微信公众号语音双引擎转码实测效果图" width="600" />
+</p>
+<p align="center">
   <img src="./docs/images/preview/preview.miniprogram-a-href-jump.png" alt="微信公众号消息与小程序直达效果预览" width="600" />
 </p>
 
 ## 主要特性与修复 (Compared to Upstream)
 
+- 🎙️ **语音双引擎自动转码系统 (New)**：
+  - 针对微信语音（Voice）仅支持 MP3 与 AMR 格式的平台限制，内置 **纯 JS 编码器 (`@breezystack/lamejs`) 与 FFmpeg 微服务双引擎**，自动将 WAV/OGG/FLAC 音频转为合规 MP3 下发，彻底终结 `40005 invalid file type` 报错（已向官方提交 [PR #449](https://github.com/satorijs/satori/pull/449)）。
+  - 支持在控制台自由设置优先级与双向 Fallback 容灾。
 - 🔗 **支持富文本超链接与小程序直达**：
   - 完整支持 `h('a', { href }, children)`，渲染为微信支持的 `<a href="...">...</a>` 网页链接或小程序卡片链接。
   - 针对带有 `href` 属性的未识别元素进行降级容错渲染，防止包含复杂元素的指令输出被截断或丢弃。
