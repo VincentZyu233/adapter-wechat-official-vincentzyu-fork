@@ -8,11 +8,11 @@
 
 我们已将适配器的核心修复与健壮性增强代码向上游官方仓库提交了 Pull Request，期待官方生态采纳合入：
 - **上游 PR 链接**：👉 **[satorijs/satori#448: fix(wechat-official): 修复临时素材上传时 img 媒体类型错误及解构崩溃](https://github.com/satorijs/satori/pull/448)**
-- **分支状态**：已完成本地与生产环境完整实机测试（Ready for review），欢迎前往上游参与 Review 或点赞关注。
+- **分支状态**：已完成本地与生产环境完整实机测试（Ready for review），欢迎前往上游参与 Review 或 给本仓库点点star谢谢喵
 
 ---
 
-## [2.5.0+20261106] - 2026-11-06
+## [2.5.1-beta.1+20261107] - 2026-11-07
 
 ### 🐛 缺陷修复 (Bug Fixes)
 

@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-adapter-wechat-official-vincentzyu-fork",
   "description": "Wechat Official Adapter for Koishi (VincentZyu Fork)",
-  "version": "2.5.0+20261106",
+  "version": "2.5.1-beta.1+20261107",
   "type": "module",
   "main": "lib/index.cjs",
   "typings": "lib/index.d.ts",
@@ -13,12 +13,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VincentZyuApps/adapter-wechat-official-vincentzyu-fork.git"
+    "url": "git+https://github.com/VincentZyuApps/koishi-plugin-adapter-wechat-official-vincentzyu-fork.git"
   },
   "bugs": {
-    "url": "https://github.com/VincentZyuApps/adapter-wechat-official-vincentzyu-fork/issues"
+    "url": "https://github.com/VincentZyuApps/koishi-plugin-adapter-wechat-official-vincentzyu-fork/issues"
   },
-  "homepage": "https://github.com/VincentZyuApps/adapter-wechat-official-vincentzyu-fork",
+  "homepage": "https://github.com/VincentZyuApps/koishi-plugin-adapter-wechat-official-vincentzyu-fork",
   "keywords": [
     "bot",
     "wechat",

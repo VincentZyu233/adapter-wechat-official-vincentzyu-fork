@@ -1,16 +1,16 @@
-> 💡 推荐前往 [GitHub](https://github.com/VincentZyuApps/adapter-wechat-official-vincentzyu-fork) 或 [Gitee](https://gitee.com/vincent-zyu/adapter-wechat-official-vincentzyu-fork) 阅读 README，体验更好。
+> 💡 推荐前往 [GitHub](https://github.com/VincentZyuApps/koishi-plugin-adapter-wechat-official-vincentzyu-fork) 或 [Gitee](https://gitee.com/vincent-zyu/koishi-plugin-adapter-wechat-official-vincentzyu-fork) 阅读 README，体验更好。
 >
 > **[📖 查看完整更新日志 →](./CHANGELOG.md)**
 
-![adapter-wechat-official-vincentzyu-fork](https://socialify.git.ci/VincentZyuApps/adapter-wechat-official-vincentzyu-fork/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff3%2FKoishi.js_Logo.png&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)
+![koishi-plugin-adapter-wechat-official-vincentzyu-fork](https://socialify.git.ci/VincentZyuApps/koishi-plugin-adapter-wechat-official-vincentzyu-fork/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff3%2FKoishi.js_Logo.png&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)
 
 # 📱 koishi-plugin-adapter-wechat-official-vincentzyu-fork
 
 [![npm](https://img.shields.io/npm/v/koishi-plugin-adapter-wechat-official-vincentzyu-fork?style=flat-square&logo=npm)](https://www.npmjs.com/package/koishi-plugin-adapter-wechat-official-vincentzyu-fork)
 [![npm-download](https://img.shields.io/npm/dm/koishi-plugin-adapter-wechat-official-vincentzyu-fork?style=flat-square&logo=npm)](https://npm-stat.com/charts.html?package=koishi-plugin-adapter-wechat-official-vincentzyu-fork)
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VincentZyuApps/adapter-wechat-official-vincentzyu-fork)
-[![Gitee](https://img.shields.io/badge/Gitee-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/vincent-zyu/adapter-wechat-official-vincentzyu-fork)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/VincentZyuApps/koishi-plugin-adapter-wechat-official-vincentzyu-fork)
+[![Gitee](https://img.shields.io/badge/Gitee-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/vincent-zyu/koishi-plugin-adapter-wechat-official-vincentzyu-fork)
 
 [![Koishi Forum](https://img.shields.io/badge/Koishi%20Forum-12566-5546A3?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABU0lEQVR42p2UQSsFYRSGnxnqLuytKWKpKFkQNsS%2FsOHPWPADLCmxU5S7UzYWNrJR7lYiRF2FeWzOMKZ7mXHqNNP5vvP2nu%2B850CY2lP4X1K31ZbaDm%2BpO%2Bpyp5wfAXVEPfRvO1JHf4AVQGbUh7j4EZ4VkrNCXPVRnf3CUBN1SH2KC28VGOV3ntRhNclZHdcAKYM11QR1oVBOXctzFlNgBTC8qmXxPQEegbVeYApIgJT6tg%2F0AdMp0B%2FBpCabK2AAmAAa%2F2GRBft1oBFPkqTAba7LCiAfQC9wClwAY1HJHepuiO29Yrsf1Dn1uiDU3RTYCtTkl1Leg8k9MB4NGgReI28rV3azgyCz0og01Xl1Uz1QX8uCTELm3UbkTF1VJ9Wr0tn3iBSGdjYG0XivE3VN3VD31PM4a3cc2tIGGI0VkTO7rLxGuiy25ejmjfqsvkSXui62TxaK03td4FXTAAAAAElFTkSuQmCC&logoColor=white)](https://forum.koishi.xyz/t/topic/12566)
 
@@ -90,9 +90,9 @@ await session.send(h.audio('file:///path/to/voice.mp3'))
 - 原始项目：[@satorijs/adapter-wechat-official](https://github.com/satorijs/satori/tree/main/adapters/wechat-official)
 - 协议生态：[Koishi](https://koishi.chat/)
 
-## 🎉 在线体验（官方示例公众号）
+## 🎉 在线体验（我搞的可以私信搜索koishi插件的微信公众号捏~ ）
 
-欢迎微信扫码关注适配器实机运行的官方示例公众号：**`koishi的npm插件公众号`**
+欢迎微信扫码关注适配器实机运行的公众号：**`koishi的npm插件公众号`**
 
 <p align="center">
   <img src="./docs/images/promote/qrcode_for_gh_adc966d1f11c_1280.jpg" alt="koishi的npm插件公众号二维码" width="240" />
