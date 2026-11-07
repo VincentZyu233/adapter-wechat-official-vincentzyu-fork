@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-adapter-wechat-official-vincentzyu-fork",
   "description": "Wechat Official Adapter for Koishi (VincentZyu Fork)",
-  "version": "2.5.1-beta.2+20261107",
+  "version": "2.6.0-beta.3+20261107",
   "type": "module",
   "main": "lib/index.cjs",
   "typings": "lib/index.d.ts",
@@ -41,6 +41,7 @@
     "@satorijs/core": "^4.5.0"
   },
   "dependencies": {
+    "@breezystack/lamejs": "^1.2.7",
     "@wecom/crypto": "^1.0.1",
     "xml2js": "^0.6.2"
   }

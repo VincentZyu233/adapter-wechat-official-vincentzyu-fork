@@ -74,9 +74,9 @@ export const usage = `
 <summary style="${summaryStyle}"><b style="color: #4caf50;">🎙️ 多媒体素材收发与自动自愈机制</b></summary>
 <div style="${detailsBodyStyle}">
 <p><b>🖼️ 图片发送：</b>完整支持 <code>session.send(h.image('...'))</code>，内部自动将 Satori 的 <code>img</code> 标签规整为微信 API 要求的 <code>image</code> 类型，彻底终结官方原版报 <code>40004 invalid media type hint</code> 的缺陷。</p>
-<p><b>🎧 语音发送：</b>支持 <code>session.send(h.audio('...'))</code>，自动转码生成临时素材下发 1" 语音消息。</p>
+<p><b>🎧 语音发送与双引擎转码：</b>支持 <code>session.send(h.audio('...'))</code>。针对微信语音（Voice）素材仅支持 MP3/AMR 的平台限制，适配器内置<b>纯 JS 编码器与 FFmpeg 微服务双引擎</b>，支持自动将 WAV/OGG/FLAC 转换为符合微信规范的标准 MP3 下发，支持在配置项中自由设置优先级与双向 Fallback 容灾，彻底终结 <code>40005 invalid file type</code> 报错。</p>
 <p><b>🔄 40001 Token 自动重试自愈：</b>在多实例运行或微信后台重置密钥导致凭证失效时，适配器会自动拦截 <code>40001</code> 错误、重新获取 Access Token 并无缝重新上传素材，无需人工干预重启。</p>
-<p><b>🛡️ 防御性容错保护：</b>素材上传失败时优雅输出 Warning 日志，杜绝 <code>undefined is not iterable</code> 导致整个消息发送链路崩溃。</p>
+<p><b>🛡️ 防御性容错保护：</b>素材上传遇到网络故障或极端错误时优雅输出 Warning 日志，杜绝 <code>undefined is not iterable</code> 导致整个被动回复链路悬挂超时。</p>
 </div>
 </details>
 

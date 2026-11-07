@@ -12,6 +12,23 @@
 
 ---
 
+## [2.6.0-beta.3+20261107] - 2026-11-07
+
+### ✨ 新增特性 (Features)
+
+- **语音双引擎自动转码系统**：针对微信公众平台语音接口（`POST /cgi-bin/media/upload?type=voice`）仅支持 MP3 与 AMR 格式的严格限制，为适配器引入音频双引擎自动转码流水线：
+  - **内置纯 JS 编码器**：引入 `@breezystack/lamejs`，针对最常见的 16-bit PCM WAV 音频切片（如 `otto-hzys` 活字印刷合成结果）在纯内存中秒级编码转为合规 MP3，零系统依赖、零环境门槛开箱即用；
+  - **FFmpeg 微服务联动**：动态联动 Koishi 上下文中的 `ffmpeg` 服务，支持全格式（WAV/OGG/FLAC/AAC/M4A 等）音频向标准 128kbps 44.1kHz MP3 转换；
+  - **双向 Fallback 容灾**：首选引擎未命中、未安装或转码失败时，自动平滑回退至备选引擎执行兜底。
+- **配置项扩展 (Schema)**：在控制台新增 `audioTranscodePriority` 单选框设置，支持用户在 WebUI 中自由切换“内置纯 JS 编码器优先”或“FFmpeg 服务优先”。
+
+### 🐛 缺陷修复 (Bug Fixes)
+
+- **修复非 MP3 语音 40005 报错**：彻底解决向微信公众号发送 WAV 音频时返回 `40005 invalid file type` 导致无法收到语音的问题。
+- **解构保护与被动响应超时防护**：修补 `flushMedia` 中对 `uploadMedia` 失败返回值的空保护，杜绝抛出 `TypeError: (intermediate value) is not iterable` 异常导致微信 5 秒被动响应窗口超时（`resolve timeout`）。
+
+---
+
 ## [2.5.1-beta.2+20261107] - 2026-11-07
 
 ### ✨ 新增特性 (Features)
