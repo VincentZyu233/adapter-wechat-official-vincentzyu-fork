@@ -13,12 +13,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VincentZyu233/adapter-wechat-official-vincentzyu-fork.git"
+    "url": "git+https://github.com/VincentZyuApps/adapter-wechat-official-vincentzyu-fork.git"
   },
   "bugs": {
-    "url": "https://github.com/VincentZyu233/adapter-wechat-official-vincentzyu-fork/issues"
+    "url": "https://github.com/VincentZyuApps/adapter-wechat-official-vincentzyu-fork/issues"
   },
-  "homepage": "https://github.com/VincentZyu233/adapter-wechat-official-vincentzyu-fork",
+  "homepage": "https://github.com/VincentZyuApps/adapter-wechat-official-vincentzyu-fork",
   "keywords": [
     "bot",
     "wechat",
