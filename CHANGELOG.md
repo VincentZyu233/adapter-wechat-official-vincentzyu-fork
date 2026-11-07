@@ -43,6 +43,8 @@
 
 ## [2.5.1-beta.1+20261107] - 2026-11-07
 
+> 对应上游修复 PR：👉 **[satorijs/satori#448](https://github.com/satorijs/satori/pull/448)**
+
 ### 🐛 缺陷修复 (Bug Fixes)
 
 - **修复媒体素材上传 40004 错误**：Satori 默认生成的图片元素标签类型为 `img`，而微信公众平台上传临时素材接口（`/cgi-bin/media/upload`）仅接受 `image` 类型。现已增加归一化转换逻辑，彻底解决公众号发图报错 `40004 invalid media type hint` 的问题。
