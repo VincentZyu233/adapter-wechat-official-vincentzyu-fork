@@ -1,0 +1,5 @@
+# Force all Markdown files to be included in GitHub language statistics
+*.md linguist-detectable=true
+*.md linguist-documentation=false
+*.markdown linguist-detectable=true
+*.markdown linguist-documentation=false
