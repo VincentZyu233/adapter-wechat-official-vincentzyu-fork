@@ -8,7 +8,7 @@
 
 我们已将适配器的核心修复与功能增强代码分批次向上游官方仓库提交了 Pull Request，期待官方生态采纳合入：
 - **Bugfix 核心修复 PR**：👉 **[satorijs/satori#448: fix(wechat-official): 修复临时素材上传时 img 媒体类型错误及解构崩溃](https://github.com/satorijs/satori/pull/448)**（Ready for review，已完成本地与生产环境完整实机测试）
-- **Feature 音频转码 PR**：👉 **[satorijs/satori#449: feat(wechat-official): 支持语音素材双引擎自动转码 (FFmpeg 服务联动与纯 JS 编码兜底)](https://github.com/satorijs/satori/pull/449)**（Draft 草稿状态，双引擎自动将非 MP3 语音转码为微信合规 MP3）
+- **Feature 音频转码 PR**：👉 **[satorijs/satori#449: feat(wechat-official): 支持语音素材双引擎自动转码 (FFmpeg 服务联动与纯 JS 编码兜底)](https://github.com/satorijs/satori/pull/449)**（Ready for review，双引擎自动将非 MP3 语音转码为微信合规 MP3）
 
 欢迎前往上游参与 Review 或给本仓库点点 Star ⭐️
 
@@ -16,7 +16,7 @@
 
 ## [2.6.0-beta.3+20261107] - 2026-11-07
 
-> 对应上游特性草稿 PR：👉 **[satorijs/satori#449](https://github.com/satorijs/satori/pull/449)**
+> 对应上游特性 PR：👉 **[satorijs/satori#449](https://github.com/satorijs/satori/pull/449)**
 
 ### ✨ 新增特性 (Features)
 
